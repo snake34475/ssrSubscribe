@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-05-22 13:23:12
+# 创建时间：2023-05-22 13:25:20
 # 使用模版：ACL4SSR.ini
-# 节点数量：6
-# 节点类型：vmess, ss
+# 节点数量：3
+# 节点类型：vmess
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -25,9 +25,6 @@ proxies:
   - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"140.99.120.182","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1684316790433","headers":{"host":"www.79204387.xyz"}}}
   - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"171.22.134.3","port":53433,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇸🇬_SG_新加坡","type":"vmess","server":"sg.fuzzypn.me","port":80,"cipher":"auto","uuid":"a1a2cfbe-ba38-429d-a31d-ce94cd50cae6","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/fuzzypn"}}
-  - {"name":"🇸🇬_SG_新加坡\r","type":"ss","server":"13.212.254.215","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"🇺🇸_US_美国->🇧🇷_BR_巴西","type":"vmess","server":"104.18.23.26","port":8080,"cipher":"auto","uuid":"dcafb669-fefc-4994-e3a9-5f40ed6aa7cf","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/sshtproject","headers":{"host":"v2free.sshtproect.shop"}}}
-  - {"name":"🇺🇸_US_美国_3","type":"vmess","server":"198.2.208.182","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -37,9 +34,6 @@ proxy-groups:
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
       - 🇸🇬_SG_新加坡
-      - "🇸🇬_SG_新加坡\r"
-      - 🇺🇸_US_美国->🇧🇷_BR_巴西
-      - 🇺🇸_US_美国_3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -49,9 +43,6 @@ proxy-groups:
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
       - 🇸🇬_SG_新加坡
-      - "🇸🇬_SG_新加坡\r"
-      - 🇺🇸_US_美国->🇧🇷_BR_巴西
-      - 🇺🇸_US_美国_3
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -61,9 +52,6 @@ proxy-groups:
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
       - 🇸🇬_SG_新加坡
-      - "🇸🇬_SG_新加坡\r"
-      - 🇺🇸_US_美国->🇧🇷_BR_巴西
-      - 🇺🇸_US_美国_3
   - name: 📲 电报信息
     type: select
     proxies:
@@ -72,9 +60,6 @@ proxy-groups:
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
       - 🇸🇬_SG_新加坡
-      - "🇸🇬_SG_新加坡\r"
-      - 🇺🇸_US_美国->🇧🇷_BR_巴西
-      - 🇺🇸_US_美国_3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -83,9 +68,6 @@ proxy-groups:
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
       - 🇸🇬_SG_新加坡
-      - "🇸🇬_SG_新加坡\r"
-      - 🇺🇸_US_美国->🇧🇷_BR_巴西
-      - 🇺🇸_US_美国_3
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -94,9 +76,6 @@ proxy-groups:
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
       - 🇸🇬_SG_新加坡
-      - "🇸🇬_SG_新加坡\r"
-      - 🇺🇸_US_美国->🇧🇷_BR_巴西
-      - 🇺🇸_US_美国_3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -122,9 +101,6 @@ proxy-groups:
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
       - 🇸🇬_SG_新加坡
-      - "🇸🇬_SG_新加坡\r"
-      - 🇺🇸_US_美国->🇧🇷_BR_巴西
-      - 🇺🇸_US_美国_3
 
 rules:
 # 本地/局域网地址
